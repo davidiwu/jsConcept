@@ -1,7 +1,10 @@
-// run command:
+// run commands:
+// npm install -g browserify
 // browserify main.js -o bundle.js
 
 const products = require('./products');
 
-console.log(products.total);
-console.log(products.catagory);
+var inventory = products("Sports Ware");
+
+console.log(inventory.total);
+console.log(inventory.catagory);

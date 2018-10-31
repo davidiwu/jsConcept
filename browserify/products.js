@@ -1,5 +1,7 @@
 
-module.exports = {
-    total: 33,
-    catagory: "Sports"
+module.exports = (cat) => {
+    return {
+        total: 33,
+        catagory: cat
+    };
 }

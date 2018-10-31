@@ -17,4 +17,39 @@ W3C
 
 use library instead to add event to node: jQuery
 
+common DOM events:
+Mouse Events	Keyboard Events	Form Events	Document/Window Events
+click	        keypress	    submit	    load
+dblclick	    keydown	        change	    resize
+mouseenter	    keyup	        focus	    scroll
+mouseleave	 	                blur	    unload
+
 */
+
+// $(document).ready will run after page is loaded.
+
+$(document).ready(
+    function() {
+        $("p").on({
+            mouseenter: function() {
+                $(this).css("background-color", "lightgray");
+            },
+            mouseleave: function() {
+                $(this).css("background-color", "lightblue");
+            },
+            click: function() {
+                $(this).css("background-color", "yellow");
+            }
+        });
+        
+        $("#box").on("click", function() {
+            $(this).css("background-color", "blue");
+        });
+        
+        $("h1").hover(function() {
+            $(this).css("background-color", "red");
+        }, function() {
+            $(this).css("background-color", "white");
+        });
+    }
+);

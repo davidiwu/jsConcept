@@ -1,5 +1,5 @@
 
-//The second parameter to require() is an anonymous function 
+//The second parameter to require() or requirejs() is an anonymous function 
 // which takes an object that is used to call the functions inside the dependent file.
 
 // The require() function is used to run immediate functionalities,
@@ -17,7 +17,19 @@
 // So, RequireJS allows us to use the shim config to define the sequence of files which need to be loaded in correct order.
 
 
+// here can use require or requirejs, they are exactly the same.
+// The reason is some environments might already have a require, in which case RequireJS doesn't overwrite it and allows usage of the library through requirejs
+
 require(["purchase"], function(purchase) {
     console.log("main module loaded")
     purchase.purchaseProduct();
 });
+
+/*
+
+ requirejs(["purchase"], function(purchase) {
+    console.log("main module loaded")
+    purchase.purchaseProduct();
+});
+
+ */

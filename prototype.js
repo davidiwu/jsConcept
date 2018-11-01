@@ -14,6 +14,9 @@ We can access the function's prototype property using the syntax functionName.pr
 
 
 All JavaScript objects inherit properties and methods from a prototype.
+
+A JavaScript method is a property containing a function definition.
+
 Date objects inherit from Date.prototype. Array objects inherit from Array.prototype.
 The Object.prototype is on the top of the prototype inheritance chain:
 Date objects, Array objects, all inherit from Object.prototype.

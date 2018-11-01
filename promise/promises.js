@@ -1,6 +1,7 @@
 
 /*
-/_ ES5 _/
+/_ ES6; ECMAScript 2015 (6th Edition, ECMA-262)
+The definition of 'Promise' in that specification. _/
 */
 
 var isMomHappy = false;

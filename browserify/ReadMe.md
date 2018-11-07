@@ -11,7 +11,7 @@ npm install -g browserify
 
 ## 1. create modules using statement like this:
 
-```
+```javascript
     module.exports = (cat) => {
         return {
             total: 33,
@@ -21,7 +21,7 @@ npm install -g browserify
 ```
 
 ## 2. use modules:
-```
+```javascript
     const products = require('./products');
 ```
 
@@ -33,7 +33,7 @@ browserify main.js -o bundle.js
 
 
 ## 4. use the bundle file in the html file:
-```
+```html
     <head>
         <script src="bundle.js"></script>
     </head>

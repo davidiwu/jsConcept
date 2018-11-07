@@ -9,7 +9,7 @@ npm install -g browserify
 
 # use the browserify
 
-1. create modules using statement like this:
+##1. create modules using statement like this:
 
 ```
     module.exports = (cat) => {
@@ -20,19 +20,19 @@ npm install -g browserify
     }
 ```
 
-2. use modules:
-
+##2. use modules:
+```
     const products = require('./products');
+```
 
-
-3. generate bundle file:
+##3. generate bundle file:
 
 run command:
 
 browserify main.js -o bundle.js
 
 
-4. use the bundle file in the html file:
+##4. use the bundle file in the html file:
 ```
     <head>
         <script src="bundle.js"></script>
